@@ -1,3 +1,13 @@
+body{
+    background: #dddee2;
+    color:#595a5e;
+    font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+nav{
+    background: #e14f7c;
+}
+
 nav .button-collapse-cart{
     float: right;
     position: relative;
@@ -15,4 +25,52 @@ img{
     max-width: 100%;
     height: auto;
     width: 100%;
+}
+
+section h1{
+    text-align: center;
+}
+
+section div.s6{
+    width: 100%;
+}
+
+.card{
+    box-shadow: none;
+}
+
+.card-action{
+    text-align: right;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating){
+    margin-right: 0;
+    background: #e4493d;
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: #f7f7f7;
+    font-weight: bold;
+}
+
+.card .card-image .card-title{
+    background: rgba(35,199,178, 0.5);
+    width: 100%;
+    font-weight: bold;
+}
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons{
+    font-size:30px;
+}
+
+.row .col.s6{
+    padding: 0;
+}
+
+.card-content{
+    text-align: right;
+    font-size: 16px;
+}
+
+.card .card-content p:nth-child(2){
+    font-weight: bold;
 }
