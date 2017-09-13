@@ -25,8 +25,8 @@
                 columnWidth: 200
             });
         });
-
     </script>
+    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
 </head>
 <body>
     <header>
@@ -58,15 +58,15 @@
             </div>
         </div>
     </header>
-    <section class="row">
+    <section>
         <h1>PRODUCTOS DESTACADOS</h1>
-        <div class="row">
-            <div class="col s12">
-                <img src="./images/prod01.jpg">
-                <p>Collar XL</p>
-                <p>$ 300</p>
-                <a href="#">Comprar</a>
-            </div>
+        <!-- Flickity HTML init -->
+        <div class="carousel-products" data-flickity>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
         </div>
     </section>
     <footer class="page-footer">

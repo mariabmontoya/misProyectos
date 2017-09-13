@@ -22,6 +22,7 @@ nav .button-collapse-cart{
 figure{
     text-align: center;
     margin: 0;
+    display: none;
 }
 
 img{
@@ -91,5 +92,37 @@ nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons{
     background: #dcdde1;
 }
 
+.carousel-slider{
+    height: 70vh !important;
+}
+
+.carousel-products {
+    background: #FAFAFA;
+    height: auto;
+}
+
+.carousel-cell {
+    width: 66%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+.flickity-page-dots{display:none;}
+
+
 @media (min-width: 768px) {
+    figure{display:block;}
 }
