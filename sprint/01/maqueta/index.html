@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,500,600,700');
@@ -19,16 +20,12 @@
         $(document).ready(function(){
             $(".button-collapse").sideNav();
             $('.carousel.carousel-slider').carousel({fullWidth: true});
-            $('.grid').masonry({
-                // options
-                itemSelector: '.grid-item',
-                columnWidth: 200
-            });
         });
     </script>
     <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
 </head>
 <body>
+<div  class="container">
     <header>
         <nav>
             <div class="nav-wrapper">
@@ -58,15 +55,30 @@
             </div>
         </div>
     </header>
-    <section>
+    <section class="destacados">
         <h1>PRODUCTOS DESTACADOS</h1>
         <!-- Flickity HTML init -->
-        <div class="carousel-products" data-flickity>
-            <div class="carousel-cell"></div>
-            <div class="carousel-cell"></div>
-            <div class="carousel-cell"></div>
-            <div class="carousel-cell"></div>
-            <div class="carousel-cell"></div>
+        <div class="carousel-products" data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false}'>
+            <div class="carousel-cell">
+                <img src="images/destacado01.jpg" />
+                <p><strong>$300</strong> resto del texto</p>
+            </div>
+            <div class="carousel-cell">
+                <img src="images/destacado01.jpg" />
+                <p><strong>$300</strong> resto del texto</p>
+            </div>
+            <div class="carousel-cell">
+                <img src="images/destacado01.jpg" />
+                <p><strong>$300</strong> resto del texto</p>
+            </div>
+            <div class="carousel-cell">
+                <img src="images/destacado01.jpg" />
+                <p><strong>$300</strong> resto del texto</p>
+            </div>
+            <div class="carousel-cell">
+                <img src="images/destacado01.jpg" />
+                <p><strong>$300</strong> resto del texto</p>
+            </div>
         </div>
     </section>
     <footer class="page-footer">
@@ -92,5 +104,6 @@
             </div>
         </div>
     </footer>
+</div>
 </body>
 </html>

@@ -99,30 +99,44 @@ nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons{
 .carousel-products {
     background: #FAFAFA;
     height: auto;
+    margin-bottom:30px;
 }
 
 .carousel-cell {
     width: 66%;
-    height: 200px;
+    height: 340px;
     margin-right: 10px;
-    background: #8C8;
-    border-radius: 5px;
     counter-increment: carousel-cell;
 }
 
-/* cell number */
-.carousel-cell:before {
-    display: block;
-    text-align: center;
-    content: counter(carousel-cell);
-    line-height: 200px;
-    font-size: 80px;
-    color: white;
+
+.carousel-products .carousel-cell{
+    width: 44%;
 }
 
-.flickity-page-dots{display:none;}
+.flickity-prev-next-button.previous,
+.flickity-prev-next-button.next{
+    display: none;
+}
+
+.container{
+    width: 100%;
+}
+
+.destacados,
+.page-footer{
+    padding-left: 10px;
+}
+
+nav .button-collapse{
+    margin: 0 10px;
+}
 
 
 @media (min-width: 768px) {
     figure{display:block;}
+    .flickity-prev-next-button.previous,
+    .flickity-prev-next-button.next{
+        display: block;
+    }
 }
