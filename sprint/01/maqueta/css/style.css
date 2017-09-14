@@ -3,6 +3,8 @@ body{
     font-family: 'Encode Sans Condensed', sans-serif;
 }
 
+a{color:#595a5e;}
+
 nav{
     background: #e04f7c; /* Old browsers */
     background: -moz-linear-gradient(left, #e04f7c 0%, #e3493d 100%); /* FF3.6-15 */
@@ -22,13 +24,16 @@ nav .button-collapse-cart{
 figure{
     text-align: center;
     margin: 0;
-    display: none;
 }
 
 img{
     max-width: 100%;
     height: auto;
     width: 100%;
+}
+
+figure.desktop{
+    display:none;
 }
 
 section h1{
@@ -40,9 +45,6 @@ section div.s6{
     width: 100%;
 }
 
-section.row .col.s12{
-    padding:0;
-}
 
 .card{
     box-shadow: none;
@@ -97,7 +99,6 @@ nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons{
 }
 
 .carousel-products {
-    background: #FAFAFA;
     height: auto;
     margin-bottom:30px;
 }
@@ -119,24 +120,67 @@ nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons{
     display: none;
 }
 
-.container{
+.container-home{
     width: 100%;
 }
 
 .destacados,
-.page-footer{
+.page-footer div.container div.row,
+.page-footer div.footer-copyright div.container{
     padding-left: 10px;
+}
+
+div.carousel-cell p{
+    margin-top: 5px;
 }
 
 nav .button-collapse{
     margin: 0 10px;
 }
 
+.collection .collection-item.avatar .secondary-content{
+    top: 8px;
+}
+
+strong{
+    font-size: 18px;
+}
+
+.calcular{
+    text-align: right;
+}
+
+.codigo-postal{
+    padding: 10px;
+}
+
+.precio-final{
+    text-align: center;
+}
+
+.botones-compra{
+    padding: 10px;
+}
+
+.side-nav li>a>i, .side-nav li>a>[class^="mdi-"], .side-nav li>a li>a>[class*="mdi-"], .side-nav li>a>i.material-icons{
+    float: right;
+    margin: 0;
+}
+
+.recordarme,
+.submit{
+    margin-bottom: 20px;
+}
+
+.olvide-password{
+    text-align: center;
+}
 
 @media (min-width: 768px) {
-    figure{display:block;}
     .flickity-prev-next-button.previous,
     .flickity-prev-next-button.next{
         display: block;
     }
+    figure.desktop{display:block;}
+    figure.mobile{display:none;}
 }
